@@ -1,0 +1,87 @@
+{
+    "identifier": "info.varisco.novalab",
+    "name": "NovaLab",
+    "organization": "Marco Varisco",
+    "description": "?¡",
+    "version": "0.0",
+    "categories": [
+        "commands",
+        "tasks"
+    ],
+    "repository": "https://github.com/mava/novalab",
+    "bugs": "https://github.com/mava/novalab/issues",
+    "license": "MIT",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "process": true
+    },
+    
+    "activationEvents": [
+        "*"
+    ],
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Undo Last Selection",
+                "command": "novalab.undoLastSelection",
+                "shortcut": "cmd-u"
+            }
+        ],
+        "extensions": [
+            {
+                "title": "Run git difftool",
+                "command": "novalab.git-difftool",
+                "shortcut": "ctrl-cmd-g"
+            }
+        ]
+    },
+    
+    "taskTemplates": {
+        "novalab": {
+            "name": "NovaLab",
+            "description": "Debug variables",
+            "tasks": {
+                "run": {
+                    "command": "/bin/echo",
+                    "args": [
+                        "ExtensionFolder = $ExtensionFolder",
+                        "\nFile = $File",
+                        "\nFileRelative = $FileRelative",
+                        "\nFileBasename = $FileBasename",
+                        "\nFileDirname = $FileDirname",
+                        "\nFileExtname = $FileExtname",
+                        "\nLineNumber = $LineNumber",
+                        "\nnovalab.getLnCol = ${Command:novalab.getLnCol}",
+                        "\nnovalab.foobar = ${Config:novalab.foobar}",
+                        "\nnovalab.getFilenameWithoutExt = ${Command:novalab.getFilenameWithoutExt}",
+                        "\n${Command:novalab.splitextDebug}",
+                        "\n\nhttps://docs.nova.app/api-reference/path/#splitextpath says that\nsplitext(path) splits the path into an array with two components:\nthe path + filename without the extension, and the file extension.",
+                    ],
+                }
+            },
+            "config": [
+                {
+                    "key": "novalab.foobar",
+                    "title": "Foo the Bar",
+                    "type": "enum",
+                    "values": ["Foo", "Bar"],
+                    "description": "If nothing is selected, then the choice in the Extension Preferences is used."
+                }
+            ]
+        }
+    },
+    
+    "config": [
+        {
+            "key": "novalab.foobar",
+            "title": "Foo the Bar",
+            "type": "enum",
+            "values": ["Foo", "Bar"],
+            "default": "Bar"
+        }
+    ]
+
+}
