@@ -4,6 +4,6 @@
 
 - **Run `git difftool`** (⌃⌘G)
 
-- A little **Run Task** template to debug Nova’s variables
+- A little **Run Task** to debug Nova’s variables
 
 ![?¡](https://github.com/mava/NovaLab/raw/main/NovaLab.novaextension/extension.png)

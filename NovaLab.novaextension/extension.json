@@ -41,46 +41,22 @@
     
     "taskTemplates": {
         "novalab": {
-            "name": "NovaLab",
+            "name": "NovaLab Template",
             "description": "Debug variables",
             "tasks": {
                 "run": {
-                    "command": "/bin/echo",
-                    "args": [
-                        "ExtensionFolder = $ExtensionFolder",
-                        "\nFile = $File",
-                        "\nFileRelative = $FileRelative",
-                        "\nFileBasename = $FileBasename",
-                        "\nFileDirname = $FileDirname",
-                        "\nFileExtname = $FileExtname",
-                        "\nLineNumber = $LineNumber",
-                        "\nnovalab.getLnCol = ${Command:novalab.getLnCol}",
-                        "\nnovalab.foobar = ${Config:novalab.foobar}",
-                        "\nnovalab.getFilenameWithoutExt = ${Command:novalab.getFilenameWithoutExt}",
-                        "\n${Command:novalab.splitextDebug}",
-                        "\n\nhttps://docs.nova.app/api-reference/path/#splitextpath says that\nsplitext(path) splits the path into an array with two components:\nthe path + filename without the extension, and the file extension.",
-                    ],
+                    "resolve": "novalab.tasks"
                 }
-            },
-            "config": [
-                {
-                    "key": "novalab.foobar",
-                    "title": "Foo the Bar",
-                    "type": "enum",
-                    "values": ["Foo", "Bar"],
-                    "description": "If nothing is selected, then the choice in the Extension Preferences is used."
-                }
-            ]
+            }
         }
     },
     
     "config": [
         {
-            "key": "novalab.foobar",
-            "title": "Foo the Bar",
-            "type": "enum",
-            "values": ["Foo", "Bar"],
-            "default": "Bar"
+            "key": "novalab.task",
+            "title": "Activate Task Assistant",
+            "type": "boolean",
+            "default": false
         }
     ]
 
