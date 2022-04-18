@@ -43,6 +43,7 @@
         "novalab": {
             "name": "NovaLab Template",
             "description": "Debug variables",
+            "image": "?¡",
             "tasks": {
                 "run": {
                     "resolve": "novalab.tasks"
