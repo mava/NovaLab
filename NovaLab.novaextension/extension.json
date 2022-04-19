@@ -3,10 +3,11 @@
     "name": "NovaLab",
     "organization": "Marco Varisco",
     "description": "?¡",
-    "version": "0.0",
+    "version": "0.1",
     "categories": [
         "commands",
-        "tasks"
+        "tasks",
+        "languages"
     ],
     "repository": "https://github.com/mava/novalab",
     "bugs": "https://github.com/mava/novalab/issues",
@@ -58,6 +59,37 @@
             "title": "Activate Task Assistant",
             "type": "boolean",
             "default": false
+        }
+    ],
+    
+    "configWorkspace": [
+        {
+            "key": "novalab.ls-activate",
+            "title": "Activate Language Server",
+            "type": "boolean",
+            "default": false,
+            "description": "Even if checked, nothing will happen if the Language Server or the Syntaxes are blank. The Language Server will be searched in $PATH."
+        },
+        {
+            "key": "novalab.ls-path",
+            "title": "Language Server",
+            "type": "path"
+        },
+        {
+            "key": "novalab.ls-args",
+            "title": "Additional Arguments",
+            "type": "stringArray",
+            "default": ["-v"]
+        },
+        {
+            "key": "novalab.ls-synt",
+            "title": "Syntaxes",
+            "type": "stringArray"
+        },
+        {
+            "title": "Add syntaxes of open documents (removing duplicates and blanks)",
+            "type": "command",
+            "command": "novalab.setSyntaxes"
         }
     ]
 
