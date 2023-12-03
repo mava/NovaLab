@@ -45,6 +45,21 @@ nova.commands.register("novalab.undoLastSelection", (editor) => {
 });
 
 
+const better = require('better-title-case.js');
+
+nova.commands.register("novalab.toTitleCase", (editor) => {
+    editor.selectWordsContainingCursors();
+    const ranges = editor.selectedRanges;
+    editor.edit(function(e) {
+        for (const range of ranges) {
+            e.replace(range, better.titleCase(editor.getTextInRange(range), {
+                preserveWhitespace: true
+            }));
+        }
+    });
+});
+
+
 nova.commands.register("novalab.git-difftool", (workspace) => {
     const path = workspace.path;
     const showMessage = (message) => nova.workspace.showWarningMessage("🧐 " + message);

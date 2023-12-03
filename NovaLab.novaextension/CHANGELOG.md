@@ -1,6 +1,10 @@
+## Version 0.2
+
+Added **Convert to Title Case** command
+
 ## Version 0.1
 
-Added Language Server interface
+Added **Language Server** interface
 
 ## Version 0.0
 

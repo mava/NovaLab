@@ -3,7 +3,7 @@
     "name": "NovaLab",
     "organization": "Marco Varisco",
     "description": "?¡",
-    "version": "0.1",
+    "version": "0.2",
     "categories": [
         "commands",
         "tasks",
@@ -28,7 +28,14 @@
             {
                 "title": "Undo Last Selection",
                 "command": "novalab.undoLastSelection",
-                "shortcut": "cmd-u"
+                "shortcut": "cmd-u",
+                "when": "editorHasFocus && editorHasSelection"
+            },
+            {
+                "title": "Convert to Title Case",
+                "command": "novalab.toTitleCase",
+                "shortcut": "ctrl-cmd-t",
+                "when": "editorHasFocus"
             }
         ],
         "extensions": [
