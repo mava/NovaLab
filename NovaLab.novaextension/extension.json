@@ -2,8 +2,8 @@
     "identifier": "info.varisco.novalab",
     "name": "NovaLab",
     "organization": "Marco Varisco",
-    "description": "?¡",
-    "version": "0.2",
+    "description": "Undo Last Selection, Convert to Title Case, Run git difftool, and generic Language Server interface",
+    "version": "0.3",
     "categories": [
         "commands",
         "tasks",
