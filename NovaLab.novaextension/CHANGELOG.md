@@ -2,6 +2,7 @@
 
 - New extension icon
 - Changed **Run `git difftool`** keyboard shortcut to ⇧⌘D
+- Removed debugging Run Task
 
 ## Version 0.2
 

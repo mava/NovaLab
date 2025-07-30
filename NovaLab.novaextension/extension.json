@@ -6,7 +6,6 @@
     "version": "0.3",
     "categories": [
         "commands",
-        "tasks",
         "languages"
     ],
     "repository": "https://github.com/mava/novalab",
@@ -46,28 +45,6 @@
             }
         ]
     },
-    
-    "taskTemplates": {
-        "novalab": {
-            "name": "NovaLab Template",
-            "description": "Debug variables",
-            "image": "?¡",
-            "tasks": {
-                "run": {
-                    "resolve": "novalab.tasks"
-                }
-            }
-        }
-    },
-    
-    "config": [
-        {
-            "key": "novalab.task",
-            "title": "Activate Task Assistant",
-            "type": "boolean",
-            "default": false
-        }
-    ],
     
     "configWorkspace": [
         {

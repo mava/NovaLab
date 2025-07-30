@@ -6,8 +6,4 @@
 
 - **Run `git difftool`** (⇧⌘D)
 
-
-- A little **Run Task** to debug Nova’s variables
-
-![?¡](https://github.com/mava/NovaLab/raw/main/NovaLab.novaextension/extension.png)
 - Generic **Language Server** interface in *Project Settings* for any [implementation](https://microsoft.github.io/language-server-protocol/implementors/servers/) of the [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/)
