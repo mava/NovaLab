@@ -42,7 +42,7 @@
             {
                 "title": "Run git difftool",
                 "command": "novalab.git-difftool",
-                "shortcut": "ctrl-cmd-g"
+                "shortcut": "shift-cmd-d"
             }
         ]
     },

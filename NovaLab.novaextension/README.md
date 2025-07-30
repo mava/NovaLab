@@ -4,7 +4,7 @@
 
 - **Convert to Title Case** (⌃⌘T)&#8239;—&#8239;using [Brad Dougherty](https://brad.is)’s JavaScript [implementation](https://github.com/bdougherty/better-title-case) of the [Daring Fireball rules](https://daringfireball.net/2008/05/title_case)
 
-- **Run `git difftool`** (⌃⌘G)
+- **Run `git difftool`** (⇧⌘D)
 
 
 - A little **Run Task** to debug Nova’s variables

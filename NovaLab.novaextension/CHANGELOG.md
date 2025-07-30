@@ -1,6 +1,7 @@
 ## Version 0.3
 
 - New extension icon
+- Changed **Run `git difftool`** keyboard shortcut to ⇧⌘D
 
 ## Version 0.2
 
