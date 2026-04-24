@@ -6,4 +6,4 @@
 
 - **Run `git difftool`** (⇧⌘D)
 
-- Generic **Language Server** interface in *Project Settings* for any [implementation](https://microsoft.github.io/language-server-protocol/implementors/servers/) of the [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/)
+- Generic **Language Server** interface in *Project Settings* for any [implementation](https://microsoft.github.io/language-server-protocol/implementors/servers/) of the [Language Server Protocol (LSP)](https://microsoft.github.io/language-server-protocol/)&#8239;—&#8239;probably obsolete since [Nova&nbsp;14](https://nova.app/releases/)
